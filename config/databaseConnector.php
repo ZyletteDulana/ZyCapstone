@@ -7,7 +7,7 @@
     define("DB_PASSWORD", "");
     define("DB_NAME", "instambay_foodhub");
 
-    $conn = new mysqli(DB_HOST, DB_USERNAME, DB_PASSWORD, $DB_NAME);
+    $conn = new mysqli(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME);
 
     if($conn->connect_errno) {
         echo "Failed to connect to the database: " . $conn->connect_error;
